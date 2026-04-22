@@ -5,7 +5,7 @@ import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('SECRET_KEY', 'your-secret-key-here-change-in-production')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 ALLOWED_HOSTS = os.environ.get(
     'ALLOWED_HOSTS',
@@ -170,4 +170,8 @@ if not DEBUG:
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     SECURE_SSL_REDIRECT = True
     SESSION_COOKIE_SECURE = True
+<<<<<<< HEAD
     CSRF_COOKIE_SECURE = True
+=======
+    CSRF_COOKIE_SECURE = True
+>>>>>>> 1b688e0 (first commit)
