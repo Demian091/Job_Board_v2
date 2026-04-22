@@ -165,13 +165,3 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
 # EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
-# Security (Render production)
-if not DEBUG:
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-    SECURE_SSL_REDIRECT = True
-    SESSION_COOKIE_SECURE = True
-<<<<<<< HEAD
-    CSRF_COOKIE_SECURE = True
-=======
-    CSRF_COOKIE_SECURE = True
->>>>>>> 1b688e0 (first commit)
